@@ -37,7 +37,7 @@
             "resources": {
               "limits": {
                 "cpu": ".2",
-                "memory": "500Mi"
+                "memory": "400Mi"
               }
             },
             "volumeMounts": [
