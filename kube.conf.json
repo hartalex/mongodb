@@ -36,7 +36,7 @@
             "image": "mongo:4.1",
             "command": ["mongod","--repair"],
             "resources": {
-              "limits": {
+              "requests": {
                 "cpu": ".5",
                 "memory": "300Mi"
               }
