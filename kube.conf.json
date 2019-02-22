@@ -34,7 +34,7 @@
           {
             "name": "mongo",
             "image": "mongo:4.1",
-            "command": ["mongo","--repair"],
+            "command": ["mongod","--repair"],
             "resources": {
               "limits": {
                 "cpu": ".2",
