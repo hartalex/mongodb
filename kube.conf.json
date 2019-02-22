@@ -37,8 +37,8 @@
             "command": ["mongod","--repair"],
             "resources": {
               "limits": {
-                "cpu": ".9",
-                "memory": "400Mi"
+                "cpu": ".5",
+                "memory": "300Mi"
               }
             },
             "volumeMounts": [
