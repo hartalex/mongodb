@@ -1,0 +1,19 @@
+sudo: required
+cache:
+  directories:
+    - "$HOME/google-cloud-sdk/"
+    - node_modules
+stages:
+  - name: releaseContainer
+    if: branch IN (test, prod, master) and type = push
+services: 
+  - docker
+before_install:
+  - ./scripts/setup.sh
+jobs:
+  include:
+    - stage: releaseContainer
+      script:
+        - ./scripts/releaseContainer.sh
+notifications:
+    slack: hartcode:GqPCaLxnPqXfPJBMjJbEvG81
