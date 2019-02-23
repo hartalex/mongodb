@@ -34,11 +34,11 @@
           {
             "name": "mongo",
             "image": "mongo:4.1",
-            "command": ["mongod","--repair"],
+            "command": ["mongod"],
             "resources": {
               "requests": {
                 "cpu": ".5",
-                "memory": "300Mi"
+                "memory": "400Mi"
               }
             },
             "volumeMounts": [
