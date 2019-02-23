@@ -34,7 +34,7 @@
           {
             "name": "mongo",
             "image": "mongo:4.1",
-            "command": ["mongod"],
+            "command": ["mongod", "--bind_ip_all"],
             "resources": {
               "requests": {
                 "cpu": ".5",
