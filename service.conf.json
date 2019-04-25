@@ -16,6 +16,6 @@
         "targetPort": 27017
       }
     ],
-    "type": "LoadBalancer"
+    "type": "ClusterIP"
   }
 }
