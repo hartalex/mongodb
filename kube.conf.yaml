@@ -11,8 +11,8 @@ spec:
     role: mongo
     environment: test
   spec:
-  terminationGracePeriodSeconds: 10
-  containers:
+    terminationGracePeriodSeconds: 10
+    containers:
     - name: mongo
       image: mongo:4.1
       command:
@@ -37,7 +37,7 @@ spec:
           value: "role=mongo,environment=test"
   volumeClaimTemplates:
   - metadata:
-    name: mongo-persistent-storage
+      name: mongo-persistent-storage
     annotations:
       volume.beta.kubernetes.io/storage-class: "mongo-sc"
     spec:

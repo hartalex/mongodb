@@ -16,7 +16,6 @@
         "targetPort": 27017
       }
     ],
-    "type": "ClusterIP",
-    "role": "mongo"
+    "type": "ClusterIP"
   }
 }
