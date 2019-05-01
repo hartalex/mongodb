@@ -2,11 +2,12 @@
   "kind": "Service",
   "apiVersion": "v1",
   "metadata": {
-    "name": "mongodb"
+    "name": "mongodb2"
   },
   "spec": {
     "selector": {
-      "app": "mongodb"
+      "app": "mongodb",
+      "role": "mongo"
     },
     "ports": [
       {
