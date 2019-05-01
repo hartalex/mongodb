@@ -53,6 +53,11 @@
               }
             ]
           }
+        ],
+        "nodeSelector": [
+          {
+          "size" : "small"
+          }
         ]
       }
     }
