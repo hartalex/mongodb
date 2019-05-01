@@ -38,10 +38,9 @@ spec:
   volumeClaimTemplates:
   - metadata:
       name: mongo-persistent-storage
-    annotations:
-      volume.beta.kubernetes.io/storage-class: "mongo-sc"
     spec:
-    accessModes: ["ReadWriteOnce"]
-    resources:
-      requests:
-        storage: 10Gi
+      accessModes: ["ReadWriteOnce"]
+      storageClassName: "mongo-sc"
+      resources:
+        requests:
+          storage: 10Gi
