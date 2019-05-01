@@ -24,8 +24,7 @@ spec:
           - "--replSet"
           - rs0
           - "--smallfiles"
-          - "--bind_ip"
-          - 0.0.0.0
+          - "--bind_ip_all”
         resources: 
           requests:
             cpu: .5
