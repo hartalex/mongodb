@@ -54,7 +54,7 @@
             ]
           }
         ],
-        "nodeSelector": [
+        "nodeSelector": 
           {
           "size" : "small"
           }
