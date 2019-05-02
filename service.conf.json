@@ -6,8 +6,8 @@
   },
   "spec": {
     "selector": {
-      "app": "mongodb",
-      "role": "mongo"
+      "role": "mongo",
+      "environment": "stest"
     },
     "ports": [
       {

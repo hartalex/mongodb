@@ -7,7 +7,7 @@ spec:
     matchLabels:
       role: mongo
       environment: test
-  serviceName: "mongo"
+  serviceName: "mongodb2"
   replicas: 3
   template:
     metadata:
@@ -23,11 +23,10 @@ spec:
           - mongod
           - "--replSet"
           - rs0
-          - "--smallfiles"
-          - "--bind_ip_all”
+          - "--bind_ip_all"
         resources: 
           requests:
-            cpu: .5
+            cpu: ".5"
             memory: "400Mi"
         ports:
           - containerPort: 27017

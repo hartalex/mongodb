@@ -4,4 +4,5 @@ chmod +x ./kubectl
 sed -i "s/(TRAVIS_COMMIT)/$TRAVIS_COMMIT/g" kube.conf.json
 ./kubectl apply -f storageClass.conf.yaml
 ./kubectl apply -f service.conf.json
-./kubectl apply -f kube.conf.yaml
+./kubectl delete -f kube.conf.yaml
+./kubectl create -f kube.conf.yaml
