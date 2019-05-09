@@ -24,10 +24,6 @@ spec:
           - "--replSet"
           - rs0
           - "--bind_ip_all"
-        resources: 
-          requests:
-            cpu: ".5"
-            memory: "400Mi"
         ports:
           - containerPort: 27017
         volumeMounts:
@@ -38,6 +34,8 @@ spec:
         env:
           - name: MONGO_SIDECAR_POD_LABELS
             value: "role=mongo,environment=test"
+          - name: KUBERNETES_MONGO_SERVICE_NAME
+            value: "mongodb2"
   volumeClaimTemplates:
   - metadata:
       name: mongo-persistent-storage
